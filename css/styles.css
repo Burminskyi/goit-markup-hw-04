@@ -32,6 +32,13 @@ a {
     width: 1152px;
 }
 
+.icon {
+    width: 41;
+
+}
+
+
+
 /* Header */
 .header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -176,7 +183,7 @@ letter-spacing: 0.02em;
     width: 264px;
 }
 
-.features li::before {
+/* .features li::before {
     display: block;
     content: '';
     height: 112px;
@@ -185,7 +192,7 @@ letter-spacing: 0.02em;
     background-color: #F4F4FD;
     border-radius: 4px;
     margin-bottom: 8px;
-}
+} */
 
 .icon-strategy::before {
     background-image: url(../images/features.svg);
@@ -215,6 +222,18 @@ letter-spacing: 0.02em;
     margin-bottom: 0;
     margin-top: 0;
 }
+
+.features-div {
+        width: 264px;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F4F4FD;
+        border-radius: 4px;
+        margin-bottom: 8px;
+}
+
 
 /* What are we doing */
 
@@ -252,7 +271,7 @@ letter-spacing: 0.02em;
     display: flex;
 }
 
-.team li {
+.team-list {
     text-align: center;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -269,7 +288,26 @@ letter-spacing: 0.02em;
 
 .team-card {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
+}
+
+.team .text {
+    margin-bottom: 12px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.social-list {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* Customers */
@@ -293,6 +331,13 @@ letter-spacing: 0.02em;
 .customers li+li {
     margin-left: 24px;
 }
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Portfolio */
 
@@ -407,10 +452,46 @@ button {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.footer div {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+}
 
-.footer a {
-    display: block;
+.footer .logo {
     margin-bottom: 16px;
+}
+
+.footer-div {
+    flex-direction: column;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.smp {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.footer-logo {
+    margin-right: 120px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);;
+}
+
+.footer-list li + li {
+    margin-left: 16px;
 }
 
 /* цвет основного текста + 2 часть лого #2E2F42 */
