@@ -17,6 +17,10 @@ a {
     text-decoration:none;
   }
 
+.pointer {
+    cursor: pointer;
+}
+
 
 .list {
     padding: 0;
@@ -76,6 +80,10 @@ a {
     letter-spacing: 0.02em;
 }
 
+.site-nav a:hover {
+    color: #434455;
+}
+
 /* Logo */
 
 .logo {
@@ -112,6 +120,10 @@ a {
 color: var(--primary-text-color);
 line-height: 1.5;
 letter-spacing: 0.02em;
+}
+
+.auth:hover {
+    color: var(--accent-color);
 }
 
 /* Hero */
@@ -321,21 +333,34 @@ letter-spacing: 0.02em;
     display: flex;
 }
 
-.customers li {
-    width: 168px;
-    height: 88px;
+.icon {
     border: 1px solid #8E8F99;
     border-radius: 4px;
+}
+
+.icon:hover {
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
 }
 
 .customers li+li {
     margin-left: 24px;
 }
 
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.customers svg {
+    fill: #8e8f99;
+}
+
+.customers svg:hover {
+fill: var(--accent-color);
 }
 
 
@@ -367,6 +392,10 @@ letter-spacing: 0.02em;
     margin-right: 24px;
     margin-bottom: 48px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.port li:hover {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .port img {
@@ -406,13 +435,14 @@ button {
     line-height: 1.19;
     border-radius: 4px;
     padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-main:hover,
 .button-main:focus {
-    color: var(--accent-color);
-    background-color: #F4F4FD;
-    line-height: 1.19;
+    /* color: var(--accent-color);
+    background-color: #F4F4FD; */
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .button-portfolio {
@@ -422,7 +452,7 @@ button {
     line-height: 1.5;
     border-radius: 4px;
     padding: 8px 16px;
-    border-color: #E7E9FC;
+    border: 1px solid #E7E9FC;
 }
 
 .button-portfolio:hover,
@@ -430,6 +460,9 @@ button {
     color: #FFFFFF;
     background-color: var(--accent-color);
     line-height: 1.5;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: 0;
 }
 
 /* Параграфы */
@@ -487,7 +520,11 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color:rgba(255, 255, 255, 0.1);;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover {
+    background: #31D0AA;
 }
 
 .footer-list li + li {
