@@ -80,7 +80,8 @@ a {
     letter-spacing: 0.02em;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a:focus {
     color: #434455;
 }
 
@@ -122,7 +123,8 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
-.auth:hover {
+.auth:hover,
+.auth:focus {
     color: var(--accent-color);
 }
 
@@ -349,18 +351,16 @@ letter-spacing: 0.02em;
     align-items: center;
     width: 168px;
     height: 88px;
+    fill: #8e8f99;
+}
+
+.customers-link:hover,
+.customers-link:focus{
+    fill: var(--accent-color);
 }
 
 .customers li+li {
     margin-left: 24px;
-}
-
-.customers svg {
-    fill: #8e8f99;
-}
-
-.customers svg:hover {
-fill: var(--accent-color);
 }
 
 
@@ -523,8 +523,9 @@ button {
     background-color:rgba(255, 255, 255, 0.1);
 }
 
-.footer-link:hover {
-    background: #31D0AA;
+.footer-link:hover,
+.footer-link:focus {
+    background-color:#31D0AA;
 }
 
 .footer-list li + li {
